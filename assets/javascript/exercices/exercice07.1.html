@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+
+<html lang="fr">
+
+
+<head>
+    
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <title>Document</title>
+    
+    <script>alert("mon prmeier script en javascript !");</script>
+    
+    <script>/* j'annonce que je parle en javascript */
+        function check(){/* la fonction check(numéro saisie) { (j'ouvre mon algorithme) */
+             var nbr; /* nom de la variable */
+             nbr = Number(document.getElementById("myInput").value); /* la valeur de mon boutoon "myInput" est = à mon nombre */
+             if(nbr%2 == 0) /* (if=si) si mon nombre sera toujour divisable  par 2 Et son résultat final sera de 0 */
+             { /* Alors */
+                    alert("Nombre pair"); /*  (fentre alerte) afficher la phrase ("Nombre paire") */
+             } /* fin du Alors */
+             else /* (else=Sinon) Sinon */
+             { /* Alors */
+                    alert("Nombre impair"); /* (fenetre alerte) afficher la phrase ("Nombre impaire") */
+             } /* fin du Alors */
+        } /* fin de l'algorithme */
+     </script> <!-- fin du langage javascript -->
+</head>
+<body>
+    
+    Entrez un nombre : <input id="myInput"> <!-- création de la case "Entrez un nombre : " + Id de la case-->
+    <button onclick="check()">Vérifier</button> <!-- crétion du boutton "Vérifier" pour que l'algorithme se mets en route -->
+
+</body>
+</html>
